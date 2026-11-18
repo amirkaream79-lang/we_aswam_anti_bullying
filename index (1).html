@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+  <meta name="description" content="مبادرة طلاب مدرسة WE بأسوان للتوعية ضد التنمر، والتعرف على أنواعه وأثره، والمشاركة في تصويت تفاعلي لنشر الاحترام والأمان.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_EG">
+  <meta property="og:title" content="معًا ضد التنمر | WE ASWAN">
+  <meta property="og:description" content="مبادرة طلاب مدرسة WE بأسوان للتوعية ضد التنمر. كن جزءًا من التغيير.">
+  <meta property="og:image" content="https://media.gemini.media/img/large/2026/7/27/2026_7_27_1_27_34_487.webp">
+  <meta property="og:image:alt" content="مبنى مدرسة WE بأسوان">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="معًا ضد التنمر | WE ASWAN">
+  <meta name="twitter:description" content="مبادرة طلاب مدرسة WE بأسوان للتوعية ضد التنمر.">
+  <meta name="twitter:image" content="https://media.gemini.media/img/large/2026/7/27/2026_7_27_1_27_34_487.webp">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102b46">
+  <title>معًا ضد التنمر | مدرسة WE بأسوان</title>
+  <style>
+    :root{
+      --navy:#102b46; --blue:#176b9a; --cyan:#28b8c7;
+      --gold:#f5bd55; --ink:#183247; --muted:#617486;
+      --paper:#ffffff; --soft:#eef7fa; --line:#dce9ee;
+      --shadow:0 16px 45px rgba(8,37,58,.13);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family:Tahoma,Arial,sans-serif; color:var(--ink);
+      background:#eaf3f7; line-height:1.85;
+    }
+    /* ضع صورة المدرسة باسم we-aswan.jpg بجانب ملف HTML */
+    body::before{
+      content:""; position:fixed; inset:0; z-index:-2;
+      background:
+        linear-gradient(135deg,rgba(8,35,57,.88),rgba(13,91,121,.78)),
+        url("https://shbabbek.com/upload/webp/upload2zmzfum101c04kc884jpg_1200X630.webp") center/cover no-repeat;
+      background-attachment:fixed;
+    }
+    body::after{
+      content:""; position:fixed; inset:0; z-index:-1;
+      background:rgba(238,247,250,.76);
+    }
+    a{color:inherit;text-decoration:none}
+    .topbar{
+      position:sticky;top:0;z-index:20;background:rgba(13,42,67,.96);
+      color:white;backdrop-filter:blur(12px);box-shadow:0 5px 20px #0b2c4630;
+    }
+    .nav{
+      max-width:1120px;margin:auto;padding:12px 22px;display:flex;
+      justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;
+    }
+    .brand{font-weight:900;letter-spacing:.2px}
+    .brand span{color:#62d5df}
+    .navlinks{display:flex;gap:17px;flex-wrap:wrap;font-size:14px}
+    .navlinks a{opacity:.9}.navlinks a:hover{color:#73e0e7}
+    .hero{
+      min-height: min(760px, 88vh);display:grid;place-items:center;text-align:center;
+      padding:100px 20px 85px;color:white;position:relative;isolation:isolate;
+      background:
+        linear-gradient(110deg,rgba(5,25,44,.76),rgba(5,37,62,.43)),
+        url("https://media.gemini.media/img/large/2026/7/27/2026_7_27_1_27_34_487.webp") center 48%/cover no-repeat;
+      background-attachment:scroll;
+    }
+    .hero::before{
+      content:"";position:absolute;inset:0;z-index:-1;
+      background:linear-gradient(0deg,rgba(7,28,48,.58),transparent 58%);
+    }
+    .hero-inner{max-width:850px}
+    .eyebrow{
+      display:inline-block;border:1px solid #ffffff66;border-radius:30px;
+      padding:6px 16px;color:#b9f3f3;font-size:14px;margin-bottom:18px;
+    }
+    h1{font-size:clamp(34px,6vw,62px);line-height:1.25;margin:8px 0 18px;text-shadow:0 3px 18px #061b2c}
+
+    .hero-leaders{
+      display:flex;justify-content:center;gap:14px;flex-wrap:wrap;
+      max-width:760px;margin:26px auto 24px;
+    }
+    .hero-leader{
+      min-width:230px;padding:13px 20px;border-radius:15px;
+      background:rgba(8,30,49,.78);border:1px solid rgba(255,255,255,.55);
+      box-shadow:0 8px 24px rgba(0,0,0,.18);backdrop-filter:blur(7px);
+      direction:ltr;text-align:center;
+    }
+    .hero-leader span{
+      display:block;color:#a9edf0;font-size:13px;font-weight:700;
+      margin-bottom:4px;
+    }
+    .hero-leader strong{display:block;color:#fff;font-size:17px;line-height:1.5}
+    @media(max-width:520px){
+      .hero-leaders{gap:9px;margin:20px auto}
+      .hero-leader{min-width:min(100%,260px);padding:11px 14px}
+      .hero-leader strong{font-size:16px}
+    }
+
+    .hero p{font-size:clamp(17px,2.5vw,21px);color:#ffffff;max-width:720px;margin:0 auto 28px;text-shadow:0 2px 12px #061b2c}
+    .btn{
+      display:inline-block;border:0;border-radius:12px;padding:12px 23px;
+      background:var(--gold);color:#183247;font-weight:800;cursor:pointer;
+      font-size:15px;transition:.2s;box-shadow:0 8px 20px #0002;
+    }
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.04)}
+    .btn.secondary{background:#e9f8fa;color:#13506c}
+    main{max-width:1120px;margin:auto;padding:0 20px 60px}
+    section{scroll-margin-top:90px;margin:42px 0}
+    .section-head{text-align:center;margin-bottom:22px}
+    .section-head .kicker{color:#16829a;font-size:13px;font-weight:900}
+    h2{font-size:clamp(25px,4vw,36px);color:var(--navy);margin:4px 0}
+    .section-head p{color:var(--muted);margin:4px auto;max-width:700px}
+    .intro-card,.story,.poll,.type-card,.message{
+      background:rgba(255,255,255,.92);border:1px solid #ffffffb0;border-radius:22px;
+      box-shadow:var(--shadow);
+    }
+    .intro-card{padding:28px;display:grid;grid-template-columns:1.3fr .7fr;gap:25px;align-items:center}
+    .intro-card h3{margin:0 0 10px;color:var(--navy);font-size:23px}
+    .quote-art{
+      min-height:190px;border-radius:18px;display:grid;place-items:center;
+      text-align:center;padding:20px;color:white;font-size:23px;font-weight:900;
+      background:radial-gradient(circle at 25% 25%,#48c7cb,#176b9a 60%,#102b46);
+    }
+    .quote-art span{display:block;font-size:46px;margin-bottom:8px}
+    .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .photo-card{margin:0;background:rgba(255,255,255,.94);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);border:1px solid #ffffffb0}
+    .photo-card img{display:block;width:100%;height:220px;object-fit:cover}
+    .photo-card figcaption{padding:13px 16px;font-weight:800;color:var(--navy)}
+    .quote-strip{margin-top:20px;padding:24px;border-radius:18px;text-align:center;color:white;background:linear-gradient(120deg,#102b46,#176b9a)}
+    .quote-strip p{font-size:clamp(19px,3vw,25px);font-weight:900;margin:0 0 5px}
+    .quote-strip span{color:#aeeef0;font-size:14px}
+
+    .school-section{margin-top:34px}
+    .school-card{
+      display:grid;grid-template-columns:1.45fr .55fr;gap:22px;
+      padding:30px;border-radius:24px;background:rgba(255,255,255,.94);
+      border:1px solid #ffffffb0;box-shadow:var(--shadow);align-items:stretch;
+    }
+    .school-copy{direction:ltr;text-align:left}
+    .school-label{
+      display:inline-block;padding:6px 13px;border-radius:30px;
+      color:#126d86;background:#e5f7fa;font-size:13px;font-weight:900;
+    }
+    .school-copy h3{color:var(--navy);font-size:clamp(23px,3vw,30px);margin:13px 0}
+    .school-copy p{color:#526a7b;font-size:15px;line-height:2}
+    .school-leaders{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+    .leader{padding:15px;border-radius:14px;background:#f0f7fa;border-left:4px solid var(--cyan)}
+    .leader span{display:block;color:#607789;font-size:13px;margin-bottom:4px}
+    .leader strong{color:var(--navy);font-size:16px}
+    .school-highlight{
+      border-radius:19px;min-height:270px;padding:25px;display:flex;
+      flex-direction:column;justify-content:center;align-items:center;text-align:center;
+      color:white;background:linear-gradient(145deg,#102b46,#176b9a 65%,#28b8c7);
+    }
+    .school-mark{
+      width:94px;height:94px;border-radius:26px;display:grid;place-items:center;
+      background:rgba(255,255,255,.14);border:1px solid #ffffff70;
+      font-size:42px;font-weight:900;letter-spacing:-3px;
+    }
+    .school-highlight h3{font-size:22px;margin:17px 0 4px}
+    .school-highlight p{color:#d9f6f7;margin:0;font-size:14px}
+    @media(max-width:700px){
+      .school-card{grid-template-columns:1fr;padding:20px}
+      .school-leaders{grid-template-columns:1fr}
+      .school-highlight{min-height:210px}
+    }
+
+    .types{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .type-card{overflow:hidden}
+    .type-visual{
+      height:170px;display:block;overflow:hidden;color:white;
+      background:linear-gradient(135deg,#176b9a,#28b8c7);
+    }
+    .type-visual img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
+    .type-card:hover .type-visual img{transform:scale(1.045)}
+    .type-content{padding:17px}
+    .type-content h3{margin:0 0 5px;color:var(--navy)}
+    .type-content p{margin:0;color:var(--muted);font-size:14px}
+    .story{padding:28px;display:grid;grid-template-columns:.75fr 1.25fr;gap:25px;align-items:center}
+    .story-art{
+      min-height:230px;border-radius:18px;display:grid;place-items:center;
+      background:linear-gradient(145deg,#193d5b,#287b94);color:white;text-align:center;padding:20px;
+    }
+    .story-art .symbol{font-size:66px}
+    .story h3{font-size:23px;color:var(--navy);margin:0 0 8px}
+    .note{border-right:4px solid var(--gold);padding:10px 14px;background:#fff8e9;border-radius:8px;color:#70551d;font-size:14px;margin-top:14px}
+    .message{padding:25px;text-align:center;background:linear-gradient(135deg,#fff,#f0fbfc)}
+    .message strong{color:#147e8c}
+    .poll{padding:28px;max-width:820px;margin:auto}
+    .poll h3{margin:0 0 5px;color:var(--navy);font-size:23px}
+    .poll-sub{color:var(--muted);margin:0 0 18px}
+    .options{display:grid;gap:10px}
+    .option{
+      display:flex;align-items:center;gap:12px;padding:13px 15px;
+      border:1.5px solid var(--line);border-radius:12px;cursor:pointer;
+      transition:.2s;background:white;
+    }
+    .option:hover{border-color:var(--cyan);background:#f4fcfd}
+    .option input{accent-color:#168ba0;width:18px;height:18px}
+    .option.selected{border-color:#168ba0;background:#eefbfc}
+    .vote-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:18px}
+    #voteStatus{font-size:13px;color:var(--muted)}
+    .results{display:none;margin-top:22px;border-top:1px solid var(--line);padding-top:18px}
+    .results.show{display:block}
+    .result-row{margin:13px 0}
+    .result-top{display:flex;justify-content:space-between;gap:10px;font-size:14px;margin-bottom:5px}
+    .bar{height:12px;border-radius:20px;background:#e8f0f3;overflow:hidden}
+    .fill{height:100%;width:0;background:linear-gradient(90deg,#28b8c7,#176b9a);border-radius:20px;transition:width .5s}
+    .smallprint{font-size:12px;color:var(--muted);margin-top:12px}
+    footer{text-align:center;padding:30px 20px;background:#102b46;color:#dcecf2}
+    footer strong{color:#72d9e0}
+    @media(max-width:850px){.types{grid-template-columns:repeat(2,1fr)}.photo-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.photo-grid{grid-template-columns:1fr}.photo-card img{height:230px}}
+    @media(max-width:650px){
+      .nav{justify-content:center}.navlinks{justify-content:center;gap:12px}
+      .intro-card,.story{grid-template-columns:1fr}
+      .hero{min-height:470px}
+    }
+    @media(max-width:430px){.types{grid-template-columns:1fr}.poll,.story,.intro-card{padding:20px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav">
+      <div class="brand">WE <span>ASWAN</span> | معًا ضد التنمر</div>
+      <div class="navlinks">
+        <a href="#school">Our School</a><a href="#about">عن التنمر</a><a href="#gallery">صور توعوية</a><a href="#types">أنواعه</a>
+        <a href="#story">قصة مؤثرة</a><a href="#vote">صوّت</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">مدرسة WE بأسوان • مبادرة توعوية</div>
+      <h1>أعزائي طلاب مدرسة WE بأسوان</h1>
+      <p>خلّونا نخلي مدرستنا مكان آمن لكل طالب. كلمة طيبة ممكن تفرق، والتنمر مش هزار… الاحترام هو اللي بيجمعنا.</p>
+
+      <div class="hero-leaders" aria-label="School leadership">
+        <div class="hero-leader">
+          <span>Academic Director</span>
+          <strong>Hassan El-Soghayer</strong>
+        </div>
+        <div class="hero-leader">
+          <span>Executive Director</span>
+          <strong>Ahmed Maher</strong>
+        </div>
+      </div>
+      <a class="btn" href="#about">اكتشف المزيد عن التنمر</a>
+    </div>
+  </div>
+
+  <main>
+
+    <section id="school" class="school-section">
+      <div class="section-head">
+        <div class="kicker">WELCOME TO WE ASWAN</div>
+        <h2>About Our School</h2>
+        <p>Discover a learning community built on knowledge, technology, creativity, and respect.</p>
+      </div>
+      <div class="school-card">
+        <div class="school-copy">
+          <span class="school-label">WE Applied Technology School – Aswan</span>
+          <h3>Empowering Students Through Technology</h3>
+          <p>
+            WE Applied Technology School – Aswan is a specialized technical school
+            focused on communications and information technology. The school combines
+            academic learning with practical training to help students build the
+            knowledge, digital skills, and professional experience needed for the
+            future. Students are encouraged to innovate, collaborate, solve problems,
+            and become responsible members of their community.
+          </p>
+          <p>
+            We believe that every student deserves a safe, welcoming place to learn,
+            grow, and achieve their potential. Respect and cooperation are essential
+            parts of our school community.
+          </p>
+          <p class="school-leadership-note"><strong>School Leadership:</strong> Meet our dedicated school leadership team in the welcome section above.</p>
+        </div>
+        <div class="school-highlight">
+          <div class="school-mark">WE</div>
+          <h3>Learn • Create • Lead</h3>
+          <p>Building skills. Inspiring ambition. Shaping the future.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-head">
+        <div class="kicker">افهم • لاحظ • ساعد</div>
+        <h2>يعني إيه تنمر؟</h2>
+        <p>التنمر هو سلوك مؤذٍ ومتكرر، فيه شخص أو مجموعة بتستخدم القوة أو النفوذ لإيذاء شخص آخر أو إحراجه أو استبعاده.</p>
+      </div>
+      <div class="intro-card">
+        <div>
+          <h3>كلنا نستحق الاحترام</h3>
+          <p>التنمر مش دليل قوة، ومش مقبول بحجة الهزار. ممكن يكون بالكلام أو التصرفات أو عبر الإنترنت. لو شفت موقف تنمر، ما تشاركش فيه، واطلب مساعدة شخص بالغ موثوق.</p>
+          <a class="btn secondary" href="#types">اعرف أنواع التنمر</a>
+        </div>
+        <div class="quote-art photo-quote" style="background-image:linear-gradient(rgba(9,40,63,.48),rgba(9,40,63,.78)),url(&quot;https://images.pexels.com/photos/7396390/pexels-photo-7396390.jpeg?auto=compress&cs=tinysrgb&w=1200&quot;)"><div>اختلافنا مش سبب<br>لإيذاء بعض</div></div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="section-head">
+        <div class="kicker">صور ورسائل من أجل بيئة آمنة</div>
+        <h2>معًا نوقف التنمر</h2>
+        <p>الصورة رسالة، وموقف الدعم ممكن يغيّر يوم شخص بالكامل.</p>
+      </div>
+      <div class="photo-grid">
+        <figure class="photo-card">
+          <img src="https://images.pexels.com/photos/7396390/pexels-photo-7396390.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="طلاب يرفعون لافتة للتوعية ضد التنمر" loading="lazy">
+          <figcaption>صوت واحد ضد التنمر</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="https://images.pexels.com/photos/7395445/pexels-photo-7395445.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="طلاب يشاركون في حملة مدرسية لمناهضة التنمر" loading="lazy">
+          <figcaption>الاختلاف مش مبرر للإيذاء</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="https://images.pexels.com/photos/7396383/pexels-photo-7396383.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="طلاب يشاركون في نشاط توعوي ضد التنمر" loading="lazy">
+          <figcaption>خليك جزء من الحل</figcaption>
+        </figure>
+      </div>
+      <div class="quote-strip">
+        <p>«مش لازم تكون بطل خارق… أحيانًا كلمة دعم واحدة بتعمل فرق كبير.»</p>
+        <span>ابدأ بالاحترام، وانشر الأمان.</span>
+      </div>
+    </section>
+
+    <section id="types">
+      <div class="section-head">
+        <div class="kicker">خليك واعي</div>
+        <h2>أنواع التنمر</h2>
+        <p>التنمر ليه أشكال مختلفة، وكلها ممكن تسيب أثرًا نفسيًا واجتماعيًا.</p>
+      </div>
+      <div class="types">
+        <article class="type-card">
+          <div class="type-visual"><img src="https://images.pexels.com/photos/7395445/pexels-photo-7395445.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="طلاب يسخرون من زميلهم داخل الفصل" loading="lazy"></div>
+          <div class="type-content"><h3>التنمر اللفظي</h3><p>السخرية، الشتائم، الألقاب الجارحة، أو التعليقات اللي تقلل من شخص.</p></div>
+        </article>
+        <article class="type-card">
+          <div class="type-visual"><img src="https://images.pexels.com/photos/7396390/pexels-photo-7396390.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="موقف تنمر بين طلاب داخل المدرسة" loading="lazy"></div>
+          <div class="type-content"><h3>التنمر الجسدي</h3><p>الدفع أو الضرب أو إتلاف ممتلكات شخص آخر أو تهديده جسديًا.</p></div>
+        </article>
+        <article class="type-card">
+          <div class="type-visual"><img src="https://images.pexels.com/photos/7396383/pexels-photo-7396383.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="استبعاد اجتماعي لطالبة من مجموعة زميلاتها" loading="lazy"></div>
+          <div class="type-content"><h3>التنمر الاجتماعي</h3><p>العزل المتعمد، نشر الشائعات، أو تحريض الآخرين على استبعاد طالب.</p></div>
+        </article>
+        <article class="type-card">
+          <div class="type-visual"><img src="https://images.pexels.com/photos/7396398/pexels-photo-7396398.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="مجموعة طلاب في موقف تنمر مدرسي" loading="lazy"></div>
+          <div class="type-content"><h3>التنمر الإلكتروني</h3><p>الإهانة أو التهديد أو نشر محتوى محرج عبر مواقع التواصل والرسائل.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="story">
+      <div class="section-head">
+        <div class="kicker">قصة للتوعية</div>
+        <h2>قصة أماندا تود</h2>
+        <p>قصة حقيقية تذكّرنا إن التنمر الإلكتروني مش مجرد كلام على شاشة.</p>
+      </div>
+      <div class="story">
+        <div class="story-art photo-story" style="background-image:linear-gradient(rgba(12,31,52,.35),rgba(12,31,52,.82)),url(&quot;https://images.pexels.com/photos/7396383/pexels-photo-7396383.jpeg?auto=compress&cs=tinysrgb&w=1200&quot;)"><div><strong>كلمة على الإنترنت<br>ممكن تسيب أثرًا كبيرًا</strong></div></div>
+        <div>
+          <h3>لما الأذى يوصل للشاشة</h3>
+          <p>أماندا تود كانت مراهقة كندية، وتعرضت لمواقف مؤذية وتنمر عبر الإنترنت لفترة. قصتها اتعرفت على نطاق واسع بعد وفاتها عام 2012، وأصبحت سببًا في زيادة الحديث عن مخاطر التنمر الإلكتروني وأهمية طلب المساعدة.</p>
+          <p>الدرس المهم: ما تنشرش صورة أو تعليق بهدف إحراج حد، وما تعيدش نشر محتوى مؤذٍ. ولو بتتعرض للتنمر، فأنت مش السبب، ومن حقك تطلب دعم شخص تثق فيه.</p>
+          <div class="note">مهم: القصص الفردية معقدة، ومش صحيح نختصر وفاة أي شخص في سبب واحد. الهدف هنا هو التوعية ومنع الأذى وطلب المساندة.</div>
+          <p style="color:#16829a;font-weight:900;margin-top:16px">«خليك الشخص اللي كنت تتمنى تلاقيه جنبك وقت الصعب.»</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="message">
+        <h2>خليك سبب في الأمان مش الخوف</h2>
+        <p>لو شفت تنمر: <strong>ما تضحكش، ما تشاركش، ما تسكتش عن طلب المساعدة.</strong><br>اتكلم مع مدرس أو أخصائي اجتماعي أو شخص بالغ تثق فيه.</p>
+      </div>
+    </section>
+
+    <section id="vote">
+      <div class="section-head">
+        <div class="kicker">شارك برأيك</div>
+        <h2>تصويت طلاب مدرسة WE</h2>
+        <p>في رأيك، إيه أفضل تصرف لو شفت زميل بيتعرض للتنمر؟ اختار إجابة واحدة وشوف نتيجة التصويت.</p>
+      </div>
+      <div class="poll">
+        <h3>إيه التصرف الصح؟</h3>
+        <p class="poll-sub">اختار إجابة واحدة فقط:</p>
+        <form id="pollForm">
+          <div class="options">
+            <label class="option"><input type="radio" name="answer" value="أسانده وأتكلم معاه وأطلب مساعدة مدرس"> أسانده وأتكلم معاه وأطلب مساعدة مدرس</label>
+            <label class="option"><input type="radio" name="answer" value="أضحك مع المجموعة"> أضحك مع المجموعة</label>
+            <label class="option"><input type="radio" name="answer" value="أتجاهل الموقف تمامًا"> أتجاهل الموقف تمامًا</label>
+            <label class="option"><input type="radio" name="answer" value="أنشر الموقف على السوشيال ميديا"> أنشر الموقف على السوشيال ميديا</label>
+            <label class="option"><input type="radio" name="answer" value="أواجه المتنمر بعنف"> أواجه المتنمر بعنف</label>
+          </div>
+          <div class="vote-actions">
+            <button class="btn" type="submit">صوّت وشوف النتيجة</button>
+            <span id="voteStatus" aria-live="polite">صوتك مهم ومشاركتك بتفرق</span>
+          </div>
+        </form>
+        <div class="results" id="results" aria-live="polite">
+          <h3>نتيجة التصويت</h3>
+          <div id="resultRows"></div>
+          <p class="smallprint" id="totalVotes"></p>
+        </div>
+        <p class="smallprint">ملاحظة: دي نسخة تجريبية؛ الأصوات بتتسجل على نفس المتصفح والجهاز فقط. علشان كل طلاب المدرسة يصوّتوا ويشوفوا نتيجة موحدة، هنحتاج نربط الموقع بقاعدة بيانات أو خدمة خلفية.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>معًا ضد التنمر</strong><br>
+    مبادرة توعوية لطلاب مدرسة WE بأسوان<br>
+    <span style="font-size:12px;opacity:.8">الاحترام مسؤولية كل واحد فينا.</span>
+  </footer>
+
+  <script>
+    const choices = [
+      "أسانده وأتكلم معاه وأطلب مساعدة مدرس",
+      "أضحك مع المجموعة",
+      "أتجاهل الموقف تمامًا",
+      "أنشر الموقف على السوشيال ميديا",
+      "أواجه المتنمر بعنف"
+    ];
+    const storageKey = "weAswanAntiBullyingPoll_v1";
+    let votes = JSON.parse(localStorage.getItem(storageKey) || "null");
+    if (!Array.isArray(votes) || votes.length !== choices.length) votes = [0,0,0,0,0];
+
+    const form = document.getElementById("pollForm");
+    const results = document.getElementById("results");
+    const resultRows = document.getElementById("resultRows");
+    const status = document.getElementById("voteStatus");
+
+    function showResults(){
+      const total = votes.reduce((sum,n)=>sum+n,0);
+      resultRows.innerHTML = "";
+      choices.forEach((choice,index)=>{
+        const percent = total ? Math.round(votes[index] / total * 100) : 0;
+        const row = document.createElement("div");
+        row.className = "result-row";
+        const top = document.createElement("div");
+        top.className = "result-top";
+        const label = document.createElement("span");
+        label.textContent = choice;
+        const value = document.createElement("strong");
+        value.textContent = percent + "%";
+        top.append(label,value);
+        const bar = document.createElement("div");
+        bar.className = "bar";
+        const fill = document.createElement("div");
+        fill.className = "fill";
+        fill.style.width = percent + "%";
+        bar.appendChild(fill);
+        row.append(top,bar);
+        resultRows.appendChild(row);
+      });
+      document.getElementById("totalVotes").textContent = "إجمالي الأصوات على هذا المتصفح: " + total;
+      results.classList.add("show");
+    }
+
+    form.addEventListener("change",()=>{
+      document.querySelectorAll(".option").forEach(el=>el.classList.remove("selected"));
+      const selected = form.querySelector('input[name="answer"]:checked');
+      if(selected) selected.closest(".option").classList.add("selected");
+    });
+
+    form.addEventListener("submit",(event)=>{
+      event.preventDefault();
+      const selected = form.querySelector('input[name="answer"]:checked');
+      if(!selected){
+        status.textContent = "اختار إجابة الأول علشان نقدر نسجل صوتك.";
+        return;
+      }
+      const previousVote = localStorage.getItem(storageKey + "_submitted");
+      if(previousVote){
+        status.textContent = "تم تسجيل صوتك من قبل على هذا المتصفح. دي النتيجة الحالية.";
+        showResults();
+        return;
+      }
+      const index = choices.indexOf(selected.value);
+      if(index >= 0){
+        votes[index]++;
+        localStorage.setItem(storageKey,JSON.stringify(votes));
+        localStorage.setItem(storageKey + "_submitted","yes");
+        status.textContent = "شكرًا لمشاركتك! تم تسجيل صوتك.";
+        showResults();
+      }
+    });
+
+    if(localStorage.getItem(storageKey + "_submitted")){
+      status.textContent = "أنت صوّت قبل كده من هذا المتصفح.";
+      showResults();
+    }
+  </script>
+</body>
+</html>
